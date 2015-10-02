@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1080"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RaiseActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal" >
+
+        <ImageButton
+            android:id="@+id/chip1Btn_client"
+            android:contentDescription="@string/chip1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/chip1" />
+
+        <ImageButton
+            android:id="@+id/chip5Btn_client"
+            android:contentDescription="@string/chip5"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/chip5" />
+
+        <ImageButton
+            android:id="@+id/chip10Btn_client"
+            android:contentDescription="@string/chip10"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/chip10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="19dp"
+        android:gravity="center_horizontal" >
+
+        <ImageButton
+            android:id="@+id/chip25Btn_client"
+            android:contentDescription="@string/chip25"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/chip25" />
+
+        <ImageButton
+            android:id="@+id/chip100Btn_client"
+            android:contentDescription="@string/chip100"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/chip100" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bettingCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="@string/currenBet"
+        android:textColor="#fff"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/resetBet_client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bettingCount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="#fff"
+        android:text="@string/resetBet" />
+
+    <Button
+        android:id="@+id/confirmBet_client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/resetBet_client"
+        android:layout_below="@+id/resetBet_client"
+        android:textColor="#fff"
+        android:text="@string/confirmBet" />
+
+</RelativeLayout>
